@@ -1,0 +1,33 @@
+import os
+from tkinter import *
+from tkinter import messagebox
+from turtle import left
+def levelanimal():
+    os.startfile(r'level_animal.py')
+    hang.destroy()
+def levelflower():
+    os.startfile(r'level_flower.py')
+    hang.destroy()
+def levelcountries():
+    os.startfile(r'level_countries.py')
+    hang.destroy()
+hang=Tk()
+
+'''window for choices'''
+hang.geometry('905x700')
+hang.resizable(False,False)
+hang.title('HANGMAN')
+head = Label(hang, text ="Choose the Interest you want to play.",fg='#D0312D',bg='#FFE87C',font=("arial",30)).pack()
+label1 = Label(hang, text ="Animals",bg='#FFE87C',font=("arial",18)).place(x=160,y=330)
+label2 = Label(hang, text ="Countries",bg='#FFE87C',font=("arial",18)).place(x=630,y=330)
+label3 = Label(hang, text ="Flowers",bg='#FFE87C',font=("arial",18)).place(x=400,y=630)
+photo1=PhotoImage(file = r"animal.png")
+photo2=PhotoImage(file = r"countries.png")
+photo3=PhotoImage(file = r"flowers.png")
+Button(hang, text = 'Animals', image = photo1,width=320,height=220,command=lambda:levelanimal()).place(x=50,y=100)
+Button(hang, text = 'Countries', image = photo2,width=320,height=220,command=lambda:levelcountries()).place(x=520,y=100)
+Button(hang, text = 'Flowers', image = photo3,width=320,height=220,command=lambda:levelflower()).place(x=285,y=400)
+hang.config(bg='#FFE87C')
+
+
+hang=mainloop()

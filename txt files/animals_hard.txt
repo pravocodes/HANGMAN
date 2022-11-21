@@ -1,0 +1,10 @@
+Capybara
+Ferret
+Quokka
+Meerkat
+Hedgehog
+Coyote
+Mole
+Alpaca
+Platypus
+Otter

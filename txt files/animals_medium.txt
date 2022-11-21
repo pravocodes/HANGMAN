@@ -1,0 +1,10 @@
+Koala
+Cheetah
+Raccoon
+Hamsters
+Rhinoceros
+Turtle
+Rabbit
+Monkey
+Hippopotamus
+Elephant
